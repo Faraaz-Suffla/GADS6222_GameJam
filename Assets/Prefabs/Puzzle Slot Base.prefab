@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c4edc7ec8fa9174ba0696f6be0b89ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Renderer: {fileID: 6783346298032032903}
   _source: {fileID: 1732705590435394623}
   _CompleteClip: {fileID: 0}
 --- !u!82 &1732705590435394623

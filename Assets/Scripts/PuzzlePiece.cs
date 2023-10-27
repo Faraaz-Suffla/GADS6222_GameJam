@@ -4,12 +4,21 @@ using UnityEngine;
 
 public class PuzzlePiece : MonoBehaviour
 {
+    [SerializeField] private SpriteRenderer _renderer;
     [SerializeField] private AudioSource _source;
     [SerializeField] private AudioClip _pickUpClip, _dropClip;
 
     private bool _dragging;
 
     private Vector2 _offset, _originalPosition;
+
+    private PuzzleSlot _slot;
+
+    public void Init(PuzzleSlot slot)
+    {
+        _renderer.sprite = slot.Renderer.sprite;
+        _slot = slot;
+    }
 
     private void Awake()
     {
