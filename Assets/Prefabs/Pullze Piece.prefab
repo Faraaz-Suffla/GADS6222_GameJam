@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb0f669fa4f10f246a34703c28bc348d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _renderer: {fileID: 0}
+  _renderer: {fileID: 2102464798913279353}
   _source: {fileID: 7752808668905406678}
   _pickUpClip: {fileID: 8300000, guid: 3c5ba2da449dd5b4ba2e4188a4f1e004, type: 3}
   _dropClip: {fileID: 8300000, guid: a4445d7aca0d4ac439645bd4e8b919f7, type: 3}
