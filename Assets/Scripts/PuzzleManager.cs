@@ -20,7 +20,7 @@ public class PuzzleManager : MonoBehaviour
             for (int i = 0; i < _slotPrefabs.Count; i++)
             {
                 var spawnedSlot = Instantiate(_slotPrefabs[i], _slotParent.GetChild(i).position, Quaternion.identity);
-                var spawnedPiece = Instantiate(_piecePrefab, _slotParent.GetChild(i).position, Quaternion.identity);
+                var spawnedPiece = Instantiate(_piecePrefab, _pieceParent.GetChild(i).position, Quaternion.identity);
                 spawnedPiece.Init(spawnedSlot);
             }
         }
