@@ -10,23 +10,37 @@ public class PuzzleManager : MonoBehaviour
 
     private void Start()
     {
-        Spawn();
+        SpawnSlots();
+        SpawnPieces();
     }
 
-    void Spawn()
+    void SpawnSlots()
     {
-        if (_slotPrefabs.Count != 0 && _piecePrefabs.Count != 0 && _slotPrefabs.Count == _piecePrefabs.Count)
+        if (_slotPrefabs.Count != 0)
         {
             for (int i = 0; i < _slotPrefabs.Count; i++)
             {
-                var spawnedSlot = Instantiate(_slotPrefabs[i], _slotParent.GetChild(i).position, Quaternion.identity);
-                var spawnedPiece = Instantiate(_piecePrefabs[i], _pieceParent.GetChild(i).position, Quaternion.identity);
-                spawnedPiece.Init(spawnedSlot);
+                Instantiate(_slotPrefabs[i], _slotParent.GetChild(i).position, Quaternion.identity, _slotParent);
             }
         }
         else
         {
-            Debug.LogWarning("Slot prefabs or piece prefabs lists are either empty or have different sizes.");
+            Debug.LogWarning("Slot prefabs list is empty.");
+        }
+    }
+
+    void SpawnPieces()
+    {
+        if (_piecePrefabs.Count != 0)
+        {
+            for (int i = 0; i < _piecePrefabs.Count; i++)
+            {
+                Instantiate(_piecePrefabs[i], _pieceParent.GetChild(i).position, Quaternion.identity, _pieceParent);
+            }
+        }
+        else
+        {
+            Debug.LogWarning("Piece prefabs list is empty.");
         }
     }
 }
