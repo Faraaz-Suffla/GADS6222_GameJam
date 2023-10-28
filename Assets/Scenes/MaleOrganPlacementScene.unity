@@ -318,15 +318,15 @@ MonoBehaviour:
   - {fileID: 1055893105421758874, guid: fe284f54858e47f458ba2e12a35c94ff, type: 3}
   - {fileID: 1055893105421758874, guid: cc49997d75e81a04e812d5f8e84dd189, type: 3}
   _piecePrefabs:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1913556796520344905, guid: f982a8f8c6e1b564c93a06beedc6976e, type: 3}
+  - {fileID: 2087515170851223738, guid: 6c9d1e52e664aa64094799e977d4b3aa, type: 3}
+  - {fileID: 5538230249473704972, guid: f5febf71ed5a3ba47b9f2e92a718a360, type: 3}
+  - {fileID: 1625266084054921402, guid: 2851db48ed9a3164fbdde39481024422, type: 3}
+  - {fileID: 61483516476011055, guid: 93d26dec655976f46b6d0dbea9374a6b, type: 3}
+  - {fileID: 5022557138491554168, guid: 7fc31d55b246877468a8928a46b26f48, type: 3}
+  - {fileID: 1034786832997268507, guid: ced7fd50715153746b745eb29219391f, type: 3}
+  - {fileID: 2945352451256322630, guid: 667021f1513305b44ab9dc1713928b9b, type: 3}
+  - {fileID: 5989452313185723068, guid: f9dae8a46601c6e4190eaacb77d968ba, type: 3}
   _slotParent: {fileID: 943572759}
   _pieceParent: {fileID: 2028212380}
 --- !u!4 &518211257
