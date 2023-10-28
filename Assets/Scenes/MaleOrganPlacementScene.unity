@@ -317,7 +317,16 @@ MonoBehaviour:
   - {fileID: 1055893105421758874, guid: e2c0c38e1a225e946b7ee2b675aea640, type: 3}
   - {fileID: 1055893105421758874, guid: fe284f54858e47f458ba2e12a35c94ff, type: 3}
   - {fileID: 1055893105421758874, guid: cc49997d75e81a04e812d5f8e84dd189, type: 3}
-  _piecePrefab: {fileID: 7375389529439717296, guid: 51805db847016a2459b3ad9e6a6f8184, type: 3}
+  _piecePrefabs:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   _slotParent: {fileID: 943572759}
   _pieceParent: {fileID: 2028212380}
 --- !u!4 &518211257
