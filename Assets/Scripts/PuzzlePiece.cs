@@ -43,27 +43,23 @@ public class PuzzlePiece : MonoBehaviour
     {
         _dragging = false;
         _source.PlayOneShot(_dropClip);
+    }
 
-        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, 0.1f);
-        foreach (Collider2D collider in hitColliders)
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        PuzzleSlot slot = other.GetComponent<PuzzleSlot>();
+        if (slot != null && !slot.IsOccupied())
         {
-            PuzzleSlot slot = collider.GetComponent<PuzzleSlot>();
-            if (slot != null && !slot.IsOccupied())
-            {
-                MoveToSlot(slot);
-                return; // Exit loop after placing the piece in the first valid slot
-            }
+            MoveToSlot(slot);
         }
-
-        transform.position = _originalPosition; // Return to original position if not dropped on a valid slot
     }
 
     private void MoveToSlot(PuzzleSlot slot)
     {
-        _currentSlot.RemovePiece(); // Remove piece from the current slot, if any
+        _currentSlot.RemovePiece();
         _currentSlot = slot;
-        _currentSlot.PlacePiece(this); // Place the piece in the new slot
-        transform.position = slot.transform.position; // Snap the piece to the slot
+        _currentSlot.PlacePiece(this);
+        transform.position = slot.transform.position;
     }
 
     private Vector2 GetMousePos()
