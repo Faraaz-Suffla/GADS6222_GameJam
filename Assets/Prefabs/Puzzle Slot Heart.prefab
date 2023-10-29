@@ -8,22 +8,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -1139035199068291327, guid: 52d422b225bef8941b06e5c76bfebb5a, type: 3}
-      propertyPath: m_Size.x
-      value: 3.2858741
-      objectReference: {fileID: 0}
-    - target: {fileID: -1139035199068291327, guid: 52d422b225bef8941b06e5c76bfebb5a, type: 3}
-      propertyPath: m_Size.y
-      value: 3.1075935
-      objectReference: {fileID: 0}
-    - target: {fileID: -1139035199068291327, guid: 52d422b225bef8941b06e5c76bfebb5a, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.028807998
-      objectReference: {fileID: 0}
-    - target: {fileID: -1139035199068291327, guid: 52d422b225bef8941b06e5c76bfebb5a, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.00000017881393
-      objectReference: {fileID: 0}
     - target: {fileID: 567663487944573055, guid: 52d422b225bef8941b06e5c76bfebb5a, type: 3}
       propertyPath: m_Name
       value: Puzzle Slot Heart
