@@ -9,35 +9,31 @@ public class PuzzlePiece : MonoBehaviour
     [SerializeField] private AudioClip _pickUpClip, _dropClip;
 
     private bool _dragging;
-
     private Vector2 _offset, _originalPosition;
-
-    private PuzzleSlot _slot;
+    private PuzzleSlot _currentSlot;
 
     public void Init(PuzzleSlot slot)
     {
         _renderer.sprite = slot.Renderer.sprite;
-        _slot = slot;
+        _currentSlot = slot;
     }
 
     private void Awake()
     {
         _originalPosition = transform.position;
+    }
 
-}
-
-private void Update()
+    private void Update()
     {
         if (_dragging)
         {
             var mousePosition = GetMousePos();
             transform.position = mousePosition - _offset;
-
             _offset = GetMousePos() - (Vector2)transform.position;
         }
     }
 
-     void OnMouseDown()
+    void OnMouseDown()
     {
         _dragging = true;
         _source.PlayOneShot(_pickUpClip);
@@ -45,12 +41,28 @@ private void Update()
 
     void OnMouseUp()
     {
-        transform.position = _originalPosition;
         _dragging = false;
         _source.PlayOneShot(_dropClip);
     }
 
-    Vector2 GetMousePos()
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        PuzzleSlot slot = other.GetComponent<PuzzleSlot>();
+        if (slot != null && !slot.IsOccupied())
+        {
+            MoveToSlot(slot);
+        }
+    }
+
+    private void MoveToSlot(PuzzleSlot slot)
+    {
+        _currentSlot.RemovePiece();
+        _currentSlot = slot;
+        _currentSlot.PlacePiece(this);
+        transform.position = slot.transform.position;
+    }
+
+    private Vector2 GetMousePos()
     {
         return Camera.main.ScreenToWorldPoint(Input.mousePosition);
     }
