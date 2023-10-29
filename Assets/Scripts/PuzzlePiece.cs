@@ -9,35 +9,31 @@ public class PuzzlePiece : MonoBehaviour
     [SerializeField] private AudioClip _pickUpClip, _dropClip;
 
     private bool _dragging;
-
     private Vector2 _offset, _originalPosition;
-
-    private PuzzleSlot _slot;
+    private PuzzleSlot _currentSlot;
 
     public void Init(PuzzleSlot slot)
     {
         _renderer.sprite = slot.Renderer.sprite;
-        _slot = slot;
+        _currentSlot = slot;
     }
 
     private void Awake()
     {
         _originalPosition = transform.position;
+    }
 
-}
-
-private void Update()
+    private void Update()
     {
         if (_dragging)
         {
             var mousePosition = GetMousePos();
             transform.position = mousePosition - _offset;
-
             _offset = GetMousePos() - (Vector2)transform.position;
         }
     }
 
-     void OnMouseDown()
+    void OnMouseDown()
     {
         _dragging = true;
         _source.PlayOneShot(_pickUpClip);
@@ -45,11 +41,9 @@ private void Update()
 
     void OnMouseUp()
     {
-        transform.position = _originalPosition;
         _dragging = false;
         _source.PlayOneShot(_dropClip);
 
-<<<<<<< HEAD
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, 0.1f);
         foreach (Collider2D collider in hitColliders)
         {
@@ -73,9 +67,6 @@ private void Update()
     }
 
     private Vector2 GetMousePos()
-=======
-    Vector2 GetMousePos()
->>>>>>> parent of 9397eb9 (added drop into slot functionality)
     {
         return Camera.main.ScreenToWorldPoint(Input.mousePosition);
     }

@@ -26,7 +26,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 567663487944573055, guid: 52d422b225bef8941b06e5c76bfebb5a, type: 3}
       propertyPath: m_Name
-      value: Puzzle Slot Base
+      value: Puzzle Slot Brain
       objectReference: {fileID: 0}
     - target: {fileID: 1085696443961213739, guid: 52d422b225bef8941b06e5c76bfebb5a, type: 3}
       propertyPath: m_LocalPosition.x
