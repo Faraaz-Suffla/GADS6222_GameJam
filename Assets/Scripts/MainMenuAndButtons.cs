@@ -93,4 +93,9 @@ public class MainMenuAndButtons : MonoBehaviour
         }
         Debug.Log("add 1 point to score & close panel");
     }
+
+    public void OpenBrowserLink()
+    {
+        Application.OpenURL("https://loveyournuts.org/");
+    }
 }
