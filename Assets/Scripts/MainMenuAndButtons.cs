@@ -6,7 +6,7 @@ using TMPro;
 
 public class MainMenuAndButtons : MonoBehaviour
 {
-    public TMP_Text text;
+    
     public int scoreCount = 0;
 
     public GameObject Panel;
@@ -68,12 +68,29 @@ public class MainMenuAndButtons : MonoBehaviour
     public void TrueButton()
     {
         scoreCount++;
-        Panel.SetActive(false);
+        if (Panel.activeInHierarchy == false)
+        {
+            Panel.SetActive(true);
+        }
+        else
+        {
+            Panel.SetActive(false);
+        }
+        Debug.Log("add 1 point to score & close panel");
+
     }
 
     public void FalseButton() 
     {
         scoreCount++;
-        Panel.SetActive(false);
+        if (Panel.activeInHierarchy == false)
+        {
+            Panel.SetActive(true);
+        }
+        else
+        {
+            Panel.SetActive(false);
+        }
+        Debug.Log("add 1 point to score & close panel");
     }
 }
