@@ -6,6 +6,12 @@ using TMPro;
 
 public class MainMenuAndButtons : MonoBehaviour
 {
+    public TMP_Text text;
+    public int scoreCount = 0;
+
+    public GameObject Panel;
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -55,5 +61,19 @@ public class MainMenuAndButtons : MonoBehaviour
     public void FemaleButton()
     {
         SceneManager.LoadScene(3);
+
+
+    }
+
+    public void TrueButton()
+    {
+        scoreCount++;
+        Panel.SetActive(false);
+    }
+
+    public void FalseButton() 
+    {
+        scoreCount++;
+        Panel.SetActive(false);
     }
 }

@@ -508,6 +508,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4da67f916b594dd4ba2167dc82dac315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text: {fileID: 0}
+  scoreCount: 0
+  Panel: {fileID: 0}
 --- !u!114 &122512531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1302,6 +1305,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4da67f916b594dd4ba2167dc82dac315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text: {fileID: 0}
+  scoreCount: 0
+  Panel: {fileID: 0}
 --- !u!114 &293341492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1828,6 +1834,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4da67f916b594dd4ba2167dc82dac315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text: {fileID: 0}
+  scoreCount: 0
+  Panel: {fileID: 0}
 --- !u!114 &380149946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2053,6 +2062,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4da67f916b594dd4ba2167dc82dac315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text: {fileID: 0}
+  scoreCount: 0
+  Panel: {fileID: 0}
 --- !u!114 &410736756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2545,6 +2557,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4da67f916b594dd4ba2167dc82dac315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text: {fileID: 0}
+  scoreCount: 0
+  Panel: {fileID: 0}
 --- !u!114 &497105171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2601,7 +2616,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &509084271
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2637,6 +2652,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4da67f916b594dd4ba2167dc82dac315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text: {fileID: 0}
+  scoreCount: 0
+  Panel: {fileID: 2119698017}
 --- !u!114 &509084273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5877,9 +5895,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'CANCER Type
+  m_text: 'Testicular
 
-'
+    Cancer'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: d75b8f41e959450c84ac6e967084d3e1, type: 2}
@@ -6375,7 +6393,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1225919515
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6411,6 +6429,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4da67f916b594dd4ba2167dc82dac315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text: {fileID: 0}
+  scoreCount: 0
+  Panel: {fileID: 0}
 --- !u!114 &1225919517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6751,6 +6772,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4da67f916b594dd4ba2167dc82dac315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text: {fileID: 0}
+  scoreCount: 0
+  Panel: {fileID: 0}
 --- !u!114 &1361844541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7542,6 +7566,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4da67f916b594dd4ba2167dc82dac315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text: {fileID: 0}
+  scoreCount: 0
+  Panel: {fileID: 1473086199}
 --- !u!114 &1473086202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7555,7 +7582,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.2830189, g: 0.27367392, b: 0.27367392, a: 0.87058824}
+  m_Color: {r: 0.2830189, g: 0.27367392, b: 0.27367392, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7696,6 +7723,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4da67f916b594dd4ba2167dc82dac315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text: {fileID: 0}
+  scoreCount: 0
+  Panel: {fileID: 0}
 --- !u!114 &1530169616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9715,7 +9745,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2119698018
 Transform:
   m_ObjectHideFlags: 0
