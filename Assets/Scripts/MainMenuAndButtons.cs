@@ -97,5 +97,6 @@ public class MainMenuAndButtons : MonoBehaviour
     public void OpenBrowserLink()
     {
         Application.OpenURL("https://loveyournuts.org/");
+        //only works on PC windows build
     }
 }
